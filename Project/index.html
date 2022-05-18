@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bus ticket booking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/4c68aea23b.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendors/css/fluid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>	
+    <link rel="stylesheet" type="text/css" href="resources/Css/style.css">
+
+		<!-- CHATBOT -->
+
+		<link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<!-- CHAT BAR BLOCK -->
+	<div class="chat-bar-collapsible">
+			<button id="chat-button" type="button" class="collapsible">Chat with us!
+					<i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+			</button>
+
+			<div class="content">
+					<div class="full-chat-block">
+							<!-- Message Container -->
+							<div class="outer-container">
+									<div class="chat-container">
+											<!-- Messages -->
+											<div id="chatbox">
+													<h5 id="chat-timestamp"></h5>
+													<p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+											</div>
+
+											<!-- User input box -->
+											<div class="chat-bar-input-block">
+													<div id="userInput">
+															<input id="textInput" class="input-box" type="text" name="msg"
+																	placeholder="Tap 'Enter' to send a message">
+															<p></p>
+													</div>
+
+													<div class="chat-bar-icons">
+															<i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+																	onclick="heartButton()"></i>
+															<i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+																	onclick="sendButton()"></i>
+													</div>
+											</div>
+
+											<div id="chat-bar-bottom">
+													<p></p>
+											</div>
+
+									</div>
+							</div>
+
+					</div>
+			</div>
+
+	</div>
+	<header>
+		<nav class="">
+			<a href="#"><img src="resources/image/digisolve-logo.png" alt="Logo" class="logo"></a>
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.php" target="_blank">Contact</a></li>
+				<li><a href="admin.php" target="_blank">Admin</a></li>
+			</ul>
+		</nav>
+		<div class="header-box">
+			<div class="header-text-box">
+				
+				<h1 class="animate__rubberBand animate__animated">Bus Reservation</h1>
+				<h2>Make your journey peacefull and happy with us</h2>	
+			</div>	
+			<a href="book-now.php" class="btn btn-full" target="_blank">Get it book Today!</a>
+		</div>
+	</header>
+	<section class="about-section">
+		<div class="row">
+			
+			<div class="col span_1_of_2 about-box">
+				<h2 class="about-heading">Last Hour Ticket Booking</h2>
+				<p class="about-para">Most of the online bus bookings are more than 50% unplanned, with 32% of the people reserving tickets on the day of travel and 24% one day before the journey. Keeping this in mind, BABA YATRA has ensured buses are available round the clock 24/7. </p>
+				<p class="about-para">At times you could be the lucky one because many of our bus partners provide last- minute deals which give you up to 25% discount on the bus ticket fare. You can experience the flexibility of the ticket booking system on BABA YATRA both in terms of bus timings and price choices. </p>
+				
+				<a href="aboutus.html" class="btn btn-ghost" target="_blank">Read More</a>
+			</div>	
+			<div class="col span_1_of_2 about-box">
+				<img src="https://s1.rdbuz.com/web/images/home/IOS_Android_device.png" alt="laptop" class="laptop-image">	
+			</div>
+		</div>
+	</section>
+
+	<section class="explore-section">
+		<div class="row">
+			<h2 class="section-heading">Travel & Explore</h2>
+			<h3 class="section-subheading">"We travel not to escape life, but for life not to escape us." </h3>
+		</div>
+		<ul class="explore-portfolio clear-fix">
+			<li>
+			<figure class="portfolio-image">
+				<img src="resources/image/portfolio1.jpg" alt="Online Advertising">
+				<p class="work-para">GOA</p>
+			</figure>
+			</li>
+
+			<li>
+				<figure class="portfolio-image">
+					<img src="resources/image/portfolio2.jpg" alt="Social Media Campaign"> 
+					<p class="work-para">DELHI</p>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="portfolio-image">
+					<img src="resources/image/portfolio3.jpg" alt="UX Design">
+					<p class="work-para">TAJ MAHAL</p>
+				</figure>
+			</li>
+
+			<li>
+				<figure class="portfolio-image">
+					<img src="resources/image/portfolio4.jpg" alt="Branding and Digital Marketing">
+					<p class="work-para">UTTRAKHAND</p>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section class="services-section">
+		<div class="row">
+			<h2 class="section-heading">Why Us?</h2>
+			<h3 class="section-subheading">There are many similar sites available but why us? Because we provide:</h3>
+		</div>
+
+		<div class="row">
+			<div class="col span_1_of_4 service-box">
+				<i class="fas fa-check-circle big-icon"></i>
+				<h4 class="service-heading">Safety</h4>
+				<p class="service-para">With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</p>
+			</div>
+
+			<div class="col span_1_of_4 service-box">
+				<i class="fas fa-user big-icon"></i>
+				<h4 class="service-heading">Best Customer Service</h4>
+				<p class="service-para">We put our experience and relationships to good use and are available to solve your travel issues.</p>
+			</div>
+
+			<div class="col span_1_of_4 service-box">
+				<i class="fas fa-rupee-sign big-icon"></i>
+				<h4 class="service-heading">Lowest Prices</h4>
+				<p class="service-para">We always give you the lowest price with the best partner offers.</p>
+			</div>
+
+			<div class="col span_1_of_4 service-box">
+				<i class="fas fa-gift big-icon"></i>
+				<h4 class="service-heading">Unmatched Benefits	</h4>
+				<p class="service-para">We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+			</div>
+		</div>
+	</section>	
+
+	<section class="numbers-section">
+		<div class="row">
+			<h2 class="section-heading">The Numbers are Growing!</h2>
+			<h3 class="section-subheading">We are growing enormously, we have crossed the milestone of 1M downloads.</h3>
+		</div>
+		<div class="row">
+				<div class="col span_1_of_3 numbers-box">
+				<p class="numbers-para-top">
+				CUSTOMERS
+				</p>
+				<p class="numbers-para">
+				1M
+				</p>
+				<p class="numbers-small-para">
+				BABA YATRA is trusted by over 1 million happy customers globally
+				</p>
+				</div>
+
+				<div class="col span_1_of_3 numbers-box">
+				<p class="numbers-para-top">
+				OPERATORS
+				</p>
+				<p class="numbers-para">
+				500
+				</p>
+				<p class="numbers-small-para">
+				Network of over 500 bus operators in India
+				</p>
+				
+				</div>
+
+				<div class="col span_1_of_3 numbers-box">
+				<p class="numbers-para-top">
+				BUS TICKETS
+				</p>
+				<p class="numbers-para">
+				12M+
+				</p>
+				<p class="numbers-small-para">
+				Over 12 million trips booked using BABA YATRA
+				</p>
+				
+				</div>
+		</div>
+	</section>
+
+	<section class="testimonials-section">
+		<div class="row">
+			<h2 class="testimonial-heading">Our Testimonials</h2>
+		</div>	
+		<div class="row">
+				<div class="col span_1_of_3 testimonial-box">
+				<blockquote>
+				I have been using this platform for tickets booking for my travels for a long time now and I had a great experience using it. Its very convenient and time saving app. Kudos to BABA YATRA.
+				</blockquote>
+				<cite>
+				<img src="resources/image/client-1.jpg">Vikas Kumar</cite>
+				</cite>
+				</div>
+
+				<div class="col span_1_of_3 testimonial-box">
+				<blockquote>
+				I had a good experience with BABA YATRA when I used the service. App is user friendly. Overall it is really good to use. My time is getting saved. I will refer it to my friends and relatives.
+				</blockquote>
+				<cite>
+				<img src="resources/image/client-2.jpg">Anuj Singh</cite>
+				</cite>
+				</div>
+
+				<div class="col span_1_of_3 testimonial-box">
+				<blockquote>
+				I left my bag at Bangalore next day they bring my bag back to me. Service is very good safely they drive and gave the beautiful experience to us. Thanks to SRI DURGA bus.
+				</blockquote>
+				<cite>
+				<img src="resources/image/client-3.jpg">Vivek Sharma</cite>
+				</cite>
+				</div>
+		</div>
+	</section>
+	<section class="packages-section">
+		<div class="row">
+			<h2 class="packages-heading">Categories of Buses</h2>
+		</div>
+		<div class="row">
+			<div class="col span_1_of_3">
+				<div class="package-box">
+					<div>
+						<h4 class="package-heading">Mini Bus</h4>
+						<p class="package-price">₹500 <span>1 day</span></p>
+						<p class="package-para">BABA YATRA provides the quickest way to find last-hour online bus booking and you can compare the prices of the operators, their schedule timings, and more.</p>
+				    </div>
+					<div>
+						<ul>
+							<li><i class="fas fa-check small-icon"></i>Lowest Prices</li>
+							<li><i class="fas fa-check small-icon"></i>Safety</li>
+							<li><i class="fas fa-check small-icon"></i>Comfortable seats</li>
+							<li><i class="fas fa-times small2-icon"></i>Sleeping area</li>
+							<li><i class="fas fa-times small2-icon"></i>AC service</li>
+						</ul>
+					</div>
+					<div>
+						<a href="book-now.php" class="btn btn-full btn-sign-up" target="_blank">Book now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span_1_of_3">
+				<div class="package-box">
+					<div>
+						<h4 class="package-heading">Sleeper Bus</h4>
+						<p class="package-price">₹1,500 <span>1 day</span></p>
+						<p class="package-para">BABA YATRA provides the quickest way to find last-hour online bus booking and you can compare the prices of the operators, their schedule timings, and more.</p>
+				    </div>
+					<div>
+						<ul>
+							<li><i class="fas fa-check small-icon"></i>Lowest Prices</li>
+							<li><i class="fas fa-check small-icon"></i>Safety</li>
+							<li><i class="fas fa-check small-icon"></i>Comfortable seats</li>
+							<li><i class="fas fa-check small-icon"></i>Sleeping area</li>
+							<li><i class="fas fa-times small2-icon"></i>AC service</li>
+						</ul>
+					</div>
+					<div>
+						<a href="book-now.php" class="btn btn-full btn-sign-up" target="_blank">Book now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span_1_of_3">
+				<div class="package-box">
+					<div>
+						<h4 class="package-heading">AC Sleeper</h4>
+						<p class="package-price">₹2,500 <span>1 day</span></p>
+						<p class="package-para">BABA YATRA provides the quickest way to find last-hour online bus booking and you can compare the prices of the operators, their schedule timings, and more.</p>
+				    </div>
+					<div>
+						<ul>
+							<li><i class="fas fa-check small-icon"></i>Lowest Prices</li>
+							<li><i class="fas fa-check small-icon"></i>Safety</li>
+							<li><i class="fas fa-check small-icon"></i>Comfortable seats</li>
+							<li><i class="fas fa-check small-icon"></i>Sleeping area</li>
+							<li><i class="fas fa-check small-icon"></i>AC service</li>
+						</ul>
+					</div>
+					<div>
+						<a href="book-now.php" class="btn btn-full btn-sign-up" target="_blank">Book now</a>
+					</div>
+				</div>
+			</div> 	
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<div class="col span_1_of_2">
+				<ul class="footer-nav">
+					<li>
+						<a href="aboutus.html" target="_blank">About us</a>
+					</li>
+					<li>
+						<a href="contact.php" target="_blank">Contact us</a>
+					</li>
+					<li>
+						<a href="faqs.html" target="_blank">FAQ's</a>
+					</li>
+					<li>
+						<a href="terms_and_conditions.html" target="_blank">T&C</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col span_1_of_2">
+				<ul class="social-links">
+					<li>
+						<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row copyright">
+			<p>The entire babayatra.com Web site is Copyright ©2005-2021 by BABAYATRA & Associates, LLC. All Rights Reserved. The babayatra.com site may not be copied or duplicated in whole or part by any means without express prior agreement in writing or unless specifically noted on the site.</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="resources/js/script.js"></script>	
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+
+</html>

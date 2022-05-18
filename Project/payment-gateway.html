@@ -1,0 +1,51 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PAYMENT</title>
+</head>
+<body>
+
+
+	<form>
+		<link rel="stylesheet" href="payment-gateway.css">
+		<div class="wrapper">
+ 			<div class="payment">
+  			<div class="payment-logo">
+      		<p>p</p>
+    		</div>
+    	<h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder's name:</label>
+        <input type="text" class="input" placeholder="Enter card holder name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="tel" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" required>
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input"  placeholder="00 / 00" required>
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div class="btn">
+        Pay
+      </div> 
+      
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
